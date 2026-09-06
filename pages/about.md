@@ -2,23 +2,32 @@
 title: "About myself"
 slug: "about"
 author: "Italia Troller"
-description: "A short introduction to who I am and what this site is about."
 ---
 
-# About myself
+# Hi! My name is Italia Troller, and I'm not showing my real name.
 
-Hi there! I'm Italia Troller. I write about Linux, self-hosting,
-gaming, and software development.
+## About myself...
 
-## What I use
+### ❓ Main stuff I do
 
-- **OS:** Linux
-- **Editor:** VS Code
-- **Terminal:** things that don't need explaining
-- **Website:** good ol' HTML + Python
+- Experimenting with LLMs, game engines and tech
 
-## Why this site exists
+- Business laptop fan
 
-Mostly to keep notes for myself and share them with whoever is
-interested. The whole build system is a handful of Python scripts —
-nothing more.
+- Avid Linux user
+
+- Running heavy games and server software on potatoes
+
+### 🤓 Interests
+
+- Immersive sim addict
+
+- Markdown (yes)
+
+- CSS styling (I'm good at configuring my CSS on Waybar)
+
+### 🌐 This site!
+
+Made in HTML, CSS, JS, Markdown and Python!
+
+This is a test site!
