@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide to servers and VPSes</title>
+    <meta name="description" content="Everything you need to know about servers and VPSes for hosting your projects.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="post">
+        <article>
+            <header>
+                <h1>Guide to servers and VPSes</h1>
+                <p class="post-meta">
+                    <time datetime="2026-08-09">August 09, 2026</time>
+                    &middot; by None
+                    <span class="tags">&middot; <a class="tag" href="/linux/">Linux</a><a class="tag" href="/server/">Server</a><a class="tag" href="/tech/">Tech</a><a class="tag" href="/windows/">Windows</a></span>
+                </p>
+                <p class="post-excerpt">Everything you need to know about servers and VPSes for hosting your projects.</p>
+            </header>
+
+            <div class="post-content">
+<h2 id="this-will-be-the-last-guide-you-will-read-on-servers-and-vpses-i-guess">This will be the last guide you will read on servers and VPSes, I guess...?</h2>
+<h3 id="what-are-servers">What are servers?</h3>
+<p>Servers are another type of computers, they can come with multiple forms: racks, towers, small, or even clusters.</p>
+<p>Unlike traditional desktops and laptops, servers are overkill for basic work. Which is why servers often come with no display by default, which means it's more focused on remote management.</p>
+<p>Some server setups also have a monitor, which is very useful for debugging issues with network, BIOS, and other things that you can't fix remotely.</p>
+<p>KVMs also exist, so it is the closest to fixing these kinds of issues remotely.</p>
+<h3 id="but-wait-theres-more">But wait, there's more!</h3>
+<p>These forms of servers are the most common on server rooms. But that doesn't stop you from turning an old laptop or desktop to a server.</p>
+<h3 id="how-can-i-start-getting-a-server">How can I start getting a server?</h3>
+<p>You can buy  dedicated server hardware with Intel Xeon or AMD EPYC, but they're usually very expensive to buy and maintain.</p>
+<p>Another way is to turn your old but capable hardware to a server, it's way cheaper, but power consumption can depend on the machine and the specs.</p>
+<p>VPSes also exist, you sign up on the provider, and get a plan, but it will bill you by month so be careful on your bank account!</p>
+<h3 id="im-getting-a-dedicated-server-what-should-i-aim-for">I'm getting a dedicated server, what should I aim for?</h3>
+<p>For dedicated server racks, towers or small efficient servers, aim for:</p>
+<ul>
+<li>Reliability</li>
+<li>Performance</li>
+<li>Power consumption and efficiency</li>
+<li>Storage</li>
+<li>Futureproofability</li>
+<li>Budget fit</li>
+</ul>
+<p>The same goes with using your old computer as a server too!</p>
+<p><strong>WARNING!</strong></p>
+<p>If your desktop/server's PSU is very old, please buy a new one! Desktop PSUs often last from 5 to 15 years.</p>
+<p>A new PSU always beat an used one because new ones often age better than buying used.</p>
+<h3 id="im-getting-a-vps-what-should-i-aim-for">I'm getting a VPS, what should I aim for?</h3>
+<p>If you are getting a VPS, you should primarily aim for:</p>
+<ul>
+<li>Reliability</li>
+<li>Performance</li>
+<li>Price per month</li>
+<li>Plans</li>
+<li>Specs</li>
+<li>Perks</li>
+<li>Customer support</li>
+</ul>
+<p>If you don't know what provider to use, I suggest you to use:</p>
+<ul>
+<li>Linode (Now Akamai Cloud) - Linux-based VPSes with good software selection and user-friendly UI, free with 100$ credit, rest pay-as-you-go</li>
+<li>GCP - Is both free and pay-as-you-go</li>
+<li>Azure - Same with GCP</li>
+<li>Oracle Cloud - Free forever and pay-as-you-go, but can be unreliable</li>
+<li>Vultr - Free 300$ credits, rest pay-as-you-go</li>
+</ul>
+<h3 id="hey-im-a-noob-at-servers-how-can-i-start-hosting-services-easily">Hey, I'm a noob at servers, how can I start hosting services easily?</h3>
+<p>If you want to start hosting services, you should check out the <a href="https://github.com/awesome-selfhosted/awesome-selfhosted">awesome-selfhosted repository on GitHub</a>.</p>
+<p>If you're still unsure, here's what you should host:</p>
+<h3 id="1-management-choices">1. Management choices</h3>
+<ul>
+<li>Debian + CasaOS (If you're familiar with Docker and Debian) - most common</li>
+<li>Any Linux distribution + Portainer (More common on Docker setups) - also very common</li>
+<li>Any Linux distribution + Cockpit (RHEL's Cockpit specifically, you may get confused by the CMS also named that) - less common, but it's more extendable</li>
+<li>Any Linux distribution + YunoHost - less common</li>
+</ul>
+<h3 id="2-networking-software">2. Networking software</h3>
+<ul>
+<li>Tailscale (WireGuard-based mesh VPN)</li>
+<li>NetBird (also a mesh VPN)</li>
+<li>Cloudflare tunnels (more common on HTTP/HTTPS stuffs)</li>
+</ul>
+<h3 id="3-maintenance-software">3. Maintenance software</h3>
+<ul>
+<li>smartctl (Storage device SMART status)</li>
+<li>cURL (fetch URLs)</li>
+<li>firewalld/ufw (Firewall utility)</li>
+</ul>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

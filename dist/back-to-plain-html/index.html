@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back to plain old HTML</title>
+    <meta name="description" content="After three months of SSGs and CMSes, it&#x27;s time to go back to basics.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="post">
+        <article>
+            <header>
+                <h1>Back to plain old HTML</h1>
+                <p class="post-meta">
+                    <time datetime="2026-09-05">September 05, 2026</time>
+                    &middot; by Italia Troller
+                    <span class="tags">&middot; <a class="tag" href="/web/">web</a><a class="tag" href="/html/">html</a><a class="tag" href="/cms/">cms</a></span>
+                </p>
+                <p class="post-excerpt">After three months of SSGs and CMSes, it&#x27;s time to go back to basics.</p>
+            </header>
+
+            <div class="post-content">
+<h1 id="back-to-plain-old-html">Back to plain old HTML</h1>
+<p>It's now rewritten in HTML! After using and reviewing SSGs and CMSes
+for 3 months and a week, good ol' HTML still can't be beaten.</p>
+<h2 id="why">Why?</h2>
+<p>Most web frameworks solve problems that a personal site doesn't have.
+A small, filesystem-based static site is:</p>
+<ul>
+<li>simple to understand</li>
+<li>trivial to deploy</li>
+<li>easy to debug</li>
+<li>totally under your control</li>
+</ul>
+<pre><code class="language-python"><span class="hljs-keyword">def</span> <span class="hljs-function">hello</span>():
+    <span class="hljs-keyword">return</span> <span class="hljs-string">"</span><span class="hljs-string">Hello, static world!</span><span class="hljs-string">"</span>
+</code></pre>
+<h3 id="the-stack">The stack</h3>
+<p>It's just <strong>HTML + CSS + Python</strong>:</p>
+<ol>
+<li>Write content in Markdown</li>
+<li>Render it at build time with a tiny script</li>
+<li>Ship the static files to Cloudflare Pages</li>
+</ol>
+<blockquote>
+<p>Less code is more maintainable.</p>
+</blockquote>
+<h2 id="verdict">Verdict</h2>
+<p>If you don't need a database, don't bring one. Use good ol' HTML.</p>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

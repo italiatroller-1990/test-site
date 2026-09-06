@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{lang}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <meta name="description" content="{description}">
+    <link rel="stylesheet" href="{css_path}style.css">
+    <link rel="stylesheet" href="{css_path}global-style.css">
+    <link rel="stylesheet" href="{css_path}navbar.css">
+    <script src="{css_path}jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="page">
+        <section>
+{content}
+        </section>
+    </main>
+
+    <script>
+        $(function() {{
+            $("#navbar").load("navbar.html");
+        }});
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Jekyll - Noob mode</title>
+    <meta name="description" content="A beginner-friendly tutorial for setting up your first Jekyll site from scratch.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="post">
+        <article>
+            <header>
+                <h1>How to Jekyll - Noob mode</h1>
+                <p class="post-meta">
+                    <time datetime="2026-08-29">August 29, 2026</time>
+                    &middot; by None
+                    <span class="tags">&middot; <a class="tag" href="/web/">Web</a><a class="tag" href="/jekyll/">Jekyll</a></span>
+                </p>
+                <p class="post-excerpt">A beginner-friendly tutorial for setting up your first Jekyll site from scratch.</p>
+            </header>
+
+            <div class="post-content">
+<p>This is my first guide on Jekyll! Please comment on if you see misinformation.</p>
+<h2 id="what-is-jekyll">What is Jekyll?</h2>
+<p><a href="https://jekyllrb.com">Jekyll</a> is a static site generator made in Ruby. It commonly uses:</p>
+<ul>
+<li>
+<p>Markdown for pages and posts</p>
+</li>
+<li>
+<p>Liquid for themes and templating</p>
+</li>
+<li>
+<p>Ruby and Bundler for dependency management, and Jekyll itself</p>
+</li>
+</ul>
+<h2 id="requirements-recommendations">Requirements &amp; recommendations</h2>
+<h3 id="1-tools">1. Tools</h3>
+<h3 id="required">Required</h3>
+<ul>
+<li>
+<p>Ruby, 3.1 is minimum, 3.4 recommended for current* version</p>
+</li>
+<li>
+<p>Reading skill for reading the documentation, RTFM is good, yes</p>
+</li>
+<li>
+<p>Liquid familiarity, which is not going to hurt your brain that much but it's gonna be clunky for YOU</p>
+</li>
+<li>
+<p>HTML, Markdown, YAML and Gemfile skills, which is too EZ</p>
+</li>
+</ul>
+<h3 id="recommended">Recommended</h3>
+<ul>
+<li>
+<p>LLM agent, can be used to assist with making your own theme, saves your sanity</p>
+</li>
+<li>
+<p>Helper scripts, you can find them on my website's <a href="https://github.com/italiatroller-1990/website">repository</a> or any other source, because yes</p>
+</li>
+<li>
+<p>Your brain, obviously</p>
+</li>
+</ul>
+<h3 id="2-hosting">2. Hosting</h3>
+<h3 id="recommended_1">Recommended</h3>
+<ul>
+<li>
+<p>GitHub Pages, Jekyll is served via Actions, basically the most reliable</p>
+</li>
+<li>
+<p>Cloudflare Pages, faster in site speed, but you're gonna wait for it to compile Ruby then install Jekyll and the dependecies, which will take way WAY longer than GitHub pages</p>
+</li>
+<li>
+<p>A home server, well don't get your hopes up when a power outage happens</p>
+</li>
+<li>
+<p>A VPS from a reliable provider, just don't get your credit card's balance to 0$</p>
+</li>
+</ul>
+<h3 id="3-domains">3. Domains</h3>
+<p>You can either use a domain you bought or subdomain you have. That's all, if you're unsure:</p>
+<ul>
+<li>Just get from a provider that works, or even better: bring your own DNS nameservers domains.</li>
+</ul>
+<h2 id="tips-tricks-notes">Tips, tricks &amp; notes</h2>
+<p>You should start reading the documentation, and follow along it. But do not blindly copy everything since you could cause issues with your source code.</p>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

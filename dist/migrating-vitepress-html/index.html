@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migrating from VitePress back to static HTML</title>
+    <meta name="description" content="A practical walkthrough of dropping the Vue-based toolchain for plain HTML.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="post">
+        <article>
+            <header>
+                <h1>Migrating from VitePress back to static HTML</h1>
+                <p class="post-meta">
+                    <time datetime="2026-09-04">September 04, 2026</time>
+                    &middot; by Italia Troller
+                    <span class="tags">&middot; <a class="tag" href="/web/">web</a><a class="tag" href="/static-site/">static-site</a><a class="tag" href="/migration/">migration</a></span>
+                </p>
+                <p class="post-excerpt">A practical walkthrough of dropping the Vue-based toolchain for plain HTML.</p>
+            </header>
+
+            <div class="post-content">
+<h1 id="migrating-from-vitepress-back-to-static-html">Migrating from VitePress back to static HTML</h1>
+<p>VitePress is great for docs, but for a tiny personal website it was
+overkill. Here's what the migration looked like.</p>
+<h2 id="what-had-to-go">What had to go</h2>
+<ul>
+<li>Node modules (68,000 files!)</li>
+<li>Vue components</li>
+<li>Build step complexity</li>
+<li>1MB of tooling for three pages</li>
+</ul>
+<h2 id="what-came-in">What came in</h2>
+<pre><code class="language-bash"><span class="hljs-comment"># Build the site
+</span>python3 build.py
+
+<span class="hljs-comment"># Create a new post
+</span>python3 new_post.py
+
+<span class="hljs-comment"># Deploy
+</span>cp -r dist/* /wherever/your/host/lives
+</code></pre>
+<h2 id="lessons">Lessons</h2>
+<table>
+<thead>
+<tr>
+<th>Old way</th>
+<th>New way</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dependency tree</td>
+<td>nothing</td>
+</tr>
+<tr>
+<td>dev server</td>
+<td>open the file</td>
+</tr>
+<tr>
+<td>200MB node_modules</td>
+<td>5 KB of scripts</td>
+</tr>
+</tbody>
+</table>
+<p>Sometimes simpler really is better.</p>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

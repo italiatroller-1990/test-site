@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About myself</title>
+    <meta name="description" content="A short introduction to who I am and what this site is about.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="page">
+        <section>
+<h1 id="about-myself">About myself</h1>
+<p>Hi there! I'm Italia Troller. I write about Linux, self-hosting,
+gaming, and software development.</p>
+<h2 id="what-i-use">What I use</h2>
+<ul>
+<li><strong>OS:</strong> Linux</li>
+<li><strong>Editor:</strong> VS Code</li>
+<li><strong>Terminal:</strong> things that don't need explaining</li>
+<li><strong>Website:</strong> good ol' HTML + Python</li>
+</ul>
+<h2 id="why-this-site-exists">Why this site exists</h2>
+<p>Mostly to keep notes for myself and share them with whoever is
+interested. The whole build system is a handful of Python scripts —
+nothing more.</p>
+        </section>
+    </main>
+
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

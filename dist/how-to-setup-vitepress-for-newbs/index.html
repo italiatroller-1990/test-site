@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to setup VitePress for newbs</title>
+    <meta name="description" content="A beginner&#x27;s guide to setting up VitePress for the first time.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="post">
+        <article>
+            <header>
+                <h1>How to setup VitePress for newbs</h1>
+                <p class="post-meta">
+                    <time datetime="2026-09-03">September 03, 2026</time>
+                    &middot; by None
+                    <span class="tags">&middot; <a class="tag" href="/vitepress/">VitePress</a><a class="tag" href="/web/">Web</a><a class="tag" href="/tech/">Tech</a></span>
+                </p>
+                <p class="post-excerpt">A beginner&#x27;s guide to setting up VitePress for the first time.</p>
+            </header>
+
+            <div class="post-content">
+<h1 id="welcome-to-this-vitepress-guide-for-newbies-this-guide-will-probably-cover">Welcome to this VitePress guide for newbies! This guide will probably cover:</h1>
+<ul>
+<li>
+<p>Dependecies before installing VitePress</p>
+</li>
+<li>
+<p>Installing and initializing VitePress</p>
+</li>
+<li>
+<p>Recommended template</p>
+</li>
+<li>
+<p>Tool recommendations</p>
+</li>
+</ul>
+<h2 id="1-dependencies">1. Dependencies</h2>
+<p>For VitePress, you're gonna need:</p>
+<ul>
+<li>
+<p>Node.js 22 or higher</p>
+</li>
+<li>
+<p>A package manager for Node.js, like <code>npm</code>, <code>pnpm</code>, <code>yarn</code>, ...etc</p>
+</li>
+</ul>
+<p>You can get these from your package manager or from Node.js' website.</p>
+<p>Package manager example because yes:</p>
+<details>
+<summary>Fedora:</summary>
+
+
+
+<pre><code class="language-sh"><span class="hljs-comment"># Install Node.js 22 and npm
+</span>sudo dnf install nodejs22 npm
+</code></pre>
+
+
+
+</details>
+
+<details>
+<summary>Debian/Ubuntu:</summary>
+
+
+
+<pre><code class="language-sh"><span class="hljs-comment"># Install Node.js and npm
+</span>sudo apt install nodejs npm
+</code></pre>
+
+
+
+</details>
+
+<h2 id="2-installing-and-initializing-vitepress">2. Installing and initializing VitePress</h2>
+<h3 id="21-installing-vitepress-obviously">2.1 Installing VitePress, obviously</h3>
+<p>From the docs, you can install VitePress using Node.js package managers:</p>
+<p>For most users, use <code>npm</code>:</p>
+<pre><code class="language-sh">npm add -D vitepress@next
+</code></pre>
+<h3 id="22-initializing-vitepress">2.2 Initializing VitePress</h3>
+<p>Initialize VitePress with <code>npx vitepress init</code>:</p>
+<pre><code class="language-sh">npx vitepress init
+</code></pre>
+<h2 id="3-recommended-template-for-newbs">3. Recommended template for newbs</h2>
+<p>When initializing VitePress, you should use Default theme + CSS customization, this makes sure that you won't have to create a completely new theme while allowing you to customize with plain CSS rather than Sass or Tailwind!</p>
+<h2 id="4-recommended-tools">4. Recommended tools</h2>
+<ul>
+<li>
+<p>Visual Studio Code/Code - OSS/VSCodium</p>
+<ul>
+<li>Best IDE for Node.js currently, adds features like built-in browser and debugging using GUI.</li>
+</ul>
+</li>
+<li>
+<p>Coding agents</p>
+<ul>
+<li>Just for assistance for various things for your site!</li>
+</ul>
+</li>
+</ul>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

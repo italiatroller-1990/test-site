@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI, UX and performance site update!</title>
+    <meta name="description" content="Site update focusing on UI, UX, and performance improvements.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="post">
+        <article>
+            <header>
+                <h1>UI, UX and performance site update!</h1>
+                <p class="post-meta">
+                    <time datetime="2026-08-02">August 02, 2026</time>
+                    &middot; by None
+                    <span class="tags">&middot; <a class="tag" href="/site-update/">Site update</a></span>
+                </p>
+                <p class="post-excerpt">Site update focusing on UI, UX, and performance improvements.</p>
+            </header>
+
+            <div class="post-content">
+<p><strong>Woohoo! Another website update!</strong></p>
+<p>What is it this time???? I've got some news for you...</p>
+<ul>
+<li>UX: the GTranslate widget is moved to the right, which makes mobile UX better!</li>
+<li>UI: The comment section and GTranslate got some CSS styling... Finally!</li>
+<li>Performance: Now there is a load comments button, you can change the comments provider or press that button to load comments!</li>
+</ul>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

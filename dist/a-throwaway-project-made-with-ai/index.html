@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A throwaway project made with AI.</title>
+    <meta name="description" content="Building a throwaway project entirely with AI assistance.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="post">
+        <article>
+            <header>
+                <h1>A throwaway project made with AI.</h1>
+                <p class="post-meta">
+                    <time datetime="2026-08-04">August 04, 2026</time>
+                    &middot; by None
+                    <span class="tags">&middot; <a class="tag" href="/ai/">AI</a><a class="tag" href="/llm/">LLM</a><a class="tag" href="/markdown/">Markdown</a><a class="tag" href="/tech/">Tech</a><a class="tag" href="/web/">Web</a><a class="tag" href="/wordpress/">WordPress</a></span>
+                </p>
+                <p class="post-excerpt">Building a throwaway project entirely with AI assistance.</p>
+            </header>
+
+            <div class="post-content">
+<p>I made a throwaway project today with ChatGPT, and it works.</p>
+<p>What kind of project exactly? A WXR (WordPress Extended RSS) to Markdown converter.</p>
+<h3 id="how-does-it-work">How does it work?</h3>
+<p>After you export your WordPress pages and posts to an XML file, which is what WXR uses, you can upload the file to the converter.</p>
+<p>The converter will do the job client-side:</p>
+<ul>
+<li>Read the XML</li>
+<li>Detect patterns that WordPress uses on the XML, e.g <code>wp-paragraph</code></li>
+<li>Detect tables</li>
+<li>Detect categories</li>
+<li>Then convert it to Markdown</li>
+<li>Zip them (uses no external Node.js modules, just pure JS)</li>
+</ul>
+<p>This tool is pretty useful for people who are going to switch from WordPress to a SSG or a flat-file CMS that needs a converted Markdown file, then paste it to their contents.</p>
+<h3 id="what-lang-is-it-made">What lang is it made?</h3>
+<p>Pure HTML, CSS and JS.</p>
+<p>This tool is now available on:</p>
+<p><a href="https://wxr-to-md.italiatroller.dpdns.org/">https://wxr-to-md.italiatroller.dpdns.org/</a></p>
+<p>Source code:</p>
+<p><a href="https://git.italiatroller.dpdns.org/italiatroller/WXR-to-MD">https://git.italiatroller.dpdns.org/italiatroller/WXR-to-MD</a></p>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

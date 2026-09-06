@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to install Automad in an external web hosting</title>
+    <meta name="description" content="Step-by-step guide to installing Automad CMS on external web hosting.">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../global-style.css">
+    <link rel="stylesheet" href="../navbar.css">
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <main class="post">
+        <article>
+            <header>
+                <h1>How to install Automad in an external web hosting</h1>
+                <p class="post-meta">
+                    <time datetime="2026-08-07">August 07, 2026</time>
+                    &middot; by None
+                    <span class="tags">&middot; <a class="tag" href="/automad-cms/">Automad CMS</a><a class="tag" href="/server/">Server</a><a class="tag" href="/tech/">Tech</a><a class="tag" href="/web/">Web</a></span>
+                </p>
+                <p class="post-excerpt">Step-by-step guide to installing Automad CMS on external web hosting.</p>
+            </header>
+
+            <div class="post-content">
+<h2 id="for-this-tutorial-im-going-to-use-infinityfree-as-an-example-please-note-that-some-hosting-providers-have-different-features-too">For this tutorial, I'm going to use InfinityFree as an example, please note that some hosting providers have different features too!</h2>
+<h2 id="1-prepare-your-hosting-and-files">1. Prepare your hosting and files</h2>
+<p>Download Automad's zip, set up your hosting, popular hosting options include: GoDaddy, Cloudzy, Hostinger, iFastNet (InfinityFree), ...etc</p>
+<h2 id="2-install-automad">2. Install Automad</h2>
+<p><img src="/assets/images/guides/how-to-install-automad/image-1786032333725.webp" alt="InfinityFree's default file manager UI" width="1844" height="989" loading="lazy"></p>
+<p>To install Automad on your hosting, go to the file manager, put the Automad zip on the public root directory (usually <code>.htdocs</code>). Depending on your file manager, there will be an extract option or upload zip, then extract, like this:</p>
+<p><img src="/assets/images/guides/how-to-install-automad/image-1786032457878.webp" alt="Extracting Automad zip" width="1290" height="925" loading="lazy"></p>
+<p>Now, go to <code>your-domain.tld/dashboard</code> (or <code>your.sub.domain/dashboard</code>) to access the Automad dashboard, then create your new user and download the accounts file.</p>
+<p><img src="/assets/images/guides/how-to-install-automad/image-1786032783006.webp" alt="Automad dashboard" width="846" height="785" loading="lazy"></p>
+<p>Now, back to the file manager</p>
+<p><img src="/assets/images/guides/how-to-install-automad/image-1786032897173.webp" alt="File manager" width="1521" height="862" loading="lazy"></p>
+<p>Upload your <code>accounts.php</code> to exactly the <code>config</code> folder</p>
+<p><img src="/assets/images/guides/how-to-install-automad/image-1786032958457.webp" alt="Uploading accounts.php" width="1513" height="361" loading="lazy"></p>
+<h2 id="3-finish-setup-sign-in-and-have-fun-creating-your-automad-website">3. Finish setup, sign in and have fun creating your Automad website!</h2>
+<p><img src="/assets/images/guides/how-to-install-automad/image-1786033042153.webp" alt="Automad setup complete" width="719" height="363" loading="lazy"></p>
+            </div>
+        </article>
+    </main>
+
+    <script>
+        $(function() {
+            $("#navbar").load("navbar.html");
+        });
+    </script>
+</body>
+</html>

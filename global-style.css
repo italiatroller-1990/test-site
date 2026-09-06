@@ -1,0 +1,157 @@
+@import url(everforest.css);
+@import url(fonts.css);
+
+body {
+    background-color: var(--bg0);
+    color: var(--fg);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--fg);
+}
+
+a {
+    color: var(--blue);
+}
+
+a:hover {
+    color: var(--aqua);
+}
+
+a:visited {
+    color: var(--purple);
+}
+
+main, article, section {
+    background-color: var(--bg1);
+    color: var(--fg);
+}
+
+/* Base16 Everforest Dark Hard overrides for every base0N slot */
+:root {
+    --base00: var(--bg0);
+    --base01: var(--bg1);
+    --base02: var(--bg2);
+    --base03: var(--grey1);
+    --base04: var(--grey2);
+    --base05: var(--fg);
+    --base06: var(--light);
+    --base07: var(--light-bg);
+    --base08: var(--blue);
+    --base09: var(--purple);
+    --base0A: var(--yellow);
+    --base0B: var(--aqua);
+    --base0C: var(--orange);
+    --base0D: var(--green);
+    --base0E: var(--red);
+    --base0F: #4C3743;
+}
+
+pre {
+    background-color: var(--bg0);
+    color: var(--fg);
+    padding: 1rem;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+code {
+    background-color: var(--bg1);
+    color: var(--red);
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+}
+
+pre code {
+    background-color: transparent;
+    color: var(--fg);
+    padding: 0;
+}
+
+/* highlight.js token colors mapped to Everforest palette */
+.hljs-comment,
+.hljs-quote {
+    color: var(--base03);
+    font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+    color: var(--base0E);
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+    color: var(--base09);
+}
+
+.hljs-string,
+.hljs-doctag {
+    color: var(--base0D);
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+    color: var(--base0A);
+}
+
+.hljs-type,
+.hljs-class .hljs-title,
+.hljs-class,
+.hljs-function .hljs-title,
+.hljs-function {
+    color: var(--base0A);
+}
+
+.hljs-operator,
+.hljs-punctuation {
+    color: var(--grey2);
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+    color: var(--base08);
+}
+
+.hljs-regexp,
+.hljs-link {
+    color: var(--base0C);
+}
+
+.hljs-symbol,
+.hljs-bullet {
+    color: var(--base0B);
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+    color: var(--base0B);
+}
+
+.hljs-meta {
+    color: var(--base03);
+}
+
+.hljs-deletion {
+    background-color: var(--bg-red);
+    color: var(--red);
+}
+
+.hljs-addition {
+    background-color: var(--bg-green);
+    color: var(--green);
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
